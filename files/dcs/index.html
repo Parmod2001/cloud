@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Cloud Storage</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>GitHub Cloud Drive</h1>
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <input type="text" id="username" placeholder="Username" /><br />
+      <input type="password" id="password" placeholder="Password" /><br />
+      <button id="loginButton">Login</button>
+      <p id="loginError" style="color:red;"></p>
+    </div>
+
+    <!-- File Manager UI -->
+    <div id="fileManager" style="display:none;">
+      <input type="file" id="fileInput" />
+      <button onclick="uploadFile()">Upload</button>
+      <h3>Files:</h3>
+      <ul id="fileList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
